@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">login_screen</string>
+    <string name="title_activity_login_success">LoginSuccessActivity</string>
 </resources>

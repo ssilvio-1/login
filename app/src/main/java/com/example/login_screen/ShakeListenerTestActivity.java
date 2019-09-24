@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.content.Context;
-import android.hardware.SensorListener;
-import android.hardware.SensorManager;
 import android.os.Vibrator;
 import android.app.AlertDialog;
 
@@ -18,7 +16,7 @@ public class ShakeListenerTestActivity extends AppCompatActivity {
         public void onCreate(Bundle savedInstanceState)
         {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_main);
+            setContentView(R.layout.passcode_login);
 
             final Vibrator vibe = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
 

@@ -17,7 +17,7 @@ public class PasscodeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.passcode_login);
         final EditText et1 = (EditText) findViewById(R.id.passw_field1);
         final EditText et2 = (EditText) findViewById(R.id.passw_field2);
         final EditText et3 = (EditText) findViewById(R.id.passw_field3);
@@ -32,6 +32,8 @@ public class PasscodeActivity extends AppCompatActivity {
 
     void passw_field_move(final EditText et1, final EditText et2, final EditText et3, final EditText et4){
         final int size = 1;
+
+        et1.requestFocus();
 
         // For password input
         et1.addTextChangedListener(new TextWatcher() {
@@ -100,11 +102,11 @@ public class PasscodeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (validationSuccess()) {
-
                     //change to next activity
                     Intent mIntent = new Intent(
                             PasscodeActivity.this,
-                            MainActivity.class);
+                            LoginSuccessActivity.class);
+                        startActivity(mIntent);
                 } else {
                     AlertDialog();
                 }
