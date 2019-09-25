@@ -11,7 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OutstandingRequestsActivity"></activity>
+        <activity
+            android:name=".CardDetailActivity"
+            android:label="@string/title_activity_card_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CreditCardHome"
+            android:label="@string/title_activity_credit_card_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".OutstandingRequestsActivity" />
         <activity
             android:name=".LoginSuccessActivity"
             android:label="@string/title_activity_login_success"
