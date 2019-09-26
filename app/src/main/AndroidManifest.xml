@@ -12,9 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ConfirmAppointmentActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".NextVisitActivity"
+            android:label="@string/title_activity_next_visit"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BranchNearCCActivity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".CardDetailActivity"
             android:label="@string/title_activity_card_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".CreditCardHome"
             android:label="@string/title_activity_credit_card_home"

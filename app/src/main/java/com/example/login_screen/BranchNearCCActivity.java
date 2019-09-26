@@ -12,21 +12,21 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class CardDetailActivity extends AppCompatActivity {
+public class BranchNearCCActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.card_detail);
+        setContentView(R.layout.branch_near_cc);
 
-        final Button branch_near_cc = (Button) findViewById(R.id.branch_near_cc);
+        final Button next_visit = (Button) findViewById(R.id.next_visit_button);
 
-        branch_near_cc.setOnClickListener(new View.OnClickListener() {
+        next_visit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent mIntent = new Intent(
-                        CardDetailActivity.this,
-                        BranchNearCCActivity.class);
+                        BranchNearCCActivity.this,
+                        NextVisitActivity.class);
                 startActivity(mIntent);
             }
         });

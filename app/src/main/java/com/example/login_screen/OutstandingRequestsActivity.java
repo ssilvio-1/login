@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class OutstandingRequestsActivity extends AppCompatActivity {
 
     int tot_requests = 0;
+
     String next_appointment = "NO UPCOMING" + "\n" + "REQUESTS";
     String appointment_list = "NO UPCOMING" + "\n" + "APPOINTMENTS";
 
@@ -19,6 +20,14 @@ public class OutstandingRequestsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.outstanding_requests);
+
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("increase_request");
+            tot_requests += 1;
+            next_appointment = "30/9 (Mon)" + "\n"+ "CREDIT CARD";
+            appointment_list = "CREDIT CARD APPOINTMENT";
+        }
 
         final TextView counter_requests = (TextView) findViewById(R.id.request_counter);
         final TextView branch_appointment = (TextView) findViewById(R.id.branch_appointment);

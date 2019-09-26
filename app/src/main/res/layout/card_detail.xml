@@ -29,5 +29,17 @@
         app:layout_constraintTop_toTopOf="@+id/t_c_card"
         app:layout_constraintVertical_bias="0.066"
         app:srcCompat="@drawable/simple_card" />
+
+    <Button
+        android:id="@+id/branch_near_cc"
+        android:layout_width="296dp"
+        android:layout_height="614dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
